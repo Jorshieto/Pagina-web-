@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración de la visualización en dispositivos -->
+    <title>EV3 Jorge Munoz</title> <!-- Título de la página -->
+    <!-- Enlaces a hojas de estilo externas -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"><!--Referencia a font-awesome que nos da los iconos de mas abajo-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="2_style.css"> <!-- Enlace a hoja de estilo  -->
+
+</head>
+<body id="fondo"> <!-- asigno el id fondo al body -->
+    <header class="head"> 
+        <div class="Redireccion_Crud"> <!-- Contenedor para redireccionamiento -->
+            <a href="#inicio">Inicio</a> <!-- enlace para volver al inicio -->
+        </div>
+        <nav class="barra_navegacion"> <!-- Barra de navegación -->
+            <!-- Enlaces para moverse por la página -->
+            <a href="#nosotros">Nosotros</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#contacto">Quiero que me contacten</a>
+        </nav>
+    </header>
+
+    <!-- Sección de inicio -->
+    <section id="inicio" class="content">
+        <h2 class="title">Inicio</h2> <!-- Título de la sección -->
+        <p>¿Buscas un servicio técnico de calidad? ¡Has llegado al lugar correcto!
+        </p>
+        <p>
+            Bienvenido a Solventa, tu socio confiable en soluciones técnicas innovadoras y eficientes. Nos dedicamos a ofrecer servicios técnicos de alta calidad a diversas compañías, asegurando que tus sistemas funcionen de manera óptima y sin interrupciones.
+            Descubre más sobre nuestros servicios y cómo podemos ayudarte a alcanzar tus objetivos tecnológicos.
+        </p>
+    </section>
+
+    <!-- Sección de Nosotros -->
+    <section id="nosotros" class="content">
+        <h2 class="title">Nosotros</h2> 
+        <p>Somos una empresa dedicada a ofrecer servicios técnicos a diversas compañías, comprometidos con el avance tecnológico. Nos enfocamos en brindar soluciones innovadoras y de alta calidad para optimizar el rendimiento y la eficiencia de nuestros clientes. Nuestro equipo de expertos altamente capacitados garantiza un soporte técnico confiable y personalizado, adaptado a las necesidades específicas de cada empresa. Con un enfoque en la excelencia y la satisfacción del cliente, nos esforzamos por ser un socio estratégico en el crecimiento y desarrollo tecnológico de nuestros clientes.
+        </p>
+    </section>
+
+<!-- Sección de Servicios -->
+<section id="servicios" class="content">
+    <h2 class="title">Servicios</h2>
+    <div class="box-container"> <!-- Contenedor de cajas para los servicios lo mismo pa abajo-->
+        <div class="box">
+            <i class="fas fa-print"></i> <!-- Icono de impresora de font awesome lo mismo pa abajo con los que dicen fas fa son iconos  -->
+            <h3>Impresoras</h3>
+            <p> mantenimiento y reparación de impresoras</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-desktop"></i>
+            <h3>Computación</h3>
+            <p>soporte técnico para equipos Computacionales</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-cogs"></i>
+            <h3>Software</h3>
+            <p>Desarrollamos y mantenemos aplicaciones personalizadas</p>
+        </div>
+    </div>
+    <div class="box-container">
+        <div class="box">
+            <i class="fas fa-server"></i>
+            <h3>Servidores</h3>
+            <p>Instalación, configuración y mantenimiento de servidores</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-headset"></i>
+            <h3>Soporte en tiempo real</h3>
+            <p>Resolviendo cualquier incidencia de manera rápida y efectiva.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-tools"></i>
+            <h3>Hardware</h3>
+            <p>Instalación y reparación de componentes</p>
+        </div>   
+    </div>
+</section>
+     
+     <!-- Sección de Contacto -->
+     <section id="contacto" class="content">
+        <h2 class="title">Quiero que me contacten</h2> 
+        <p>Si quieres ser contactado por uno de nuestros ejecutivos</p>
+        <!-- Botón para redireccionar a 3_CRUD -->
+        <a href="3_CRUD.html" class="btn btn-primary last-btn">Presione aquí</a>
+    </section>
+    <div class="barra-separadora">
+        <!-- Botón para redireccionar a la página de términos legales -->
+        <a href="5_terminos_legales.html" class="terminos">Terminos legales</a>
+        
+    </div>
+    <!-- referencia a nuestro archivo js -->
+    <script src="4_JavaScrip.js"></script>
+</body>
+</html>

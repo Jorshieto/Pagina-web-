@@ -1,0 +1,330 @@
+/* Fondo de la página web */
+#fondo {
+    background-image: url(./fondo.png);
+    background-repeat: no-repeat; /* Hace que la imagen de fondo no se repita */
+    background-position: center center; /* Centro horizontal y vertical */
+    background-attachment: fixed; /* Hace que la imagen de fondo sea fija */
+    background-size: cover; /* Hace que la imagen cubra todo el fondo */
+}
+
+/* Reseteo de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    box-sizing: border-box; /* Establezco molde como border-box */
+}
+
+/* Estilos generales del cuerpo */
+body {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+/* Barra principal de busqueda*/
+.head {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 70px;
+    background-color: #171717;
+    position: fixed; 
+    width: 100%;
+    z-index: 100; /* Fija la posición frente a los demás elementos */
+}
+/* Barra de navegación */
+.barra_navegacion {
+    display: flex;
+    margin-right: 10px;
+}
+
+.Redireccion_Crud {
+    margin-left: 30px;
+}
+
+.Redireccion_Crud a {
+    text-decoration: none;          /* quito el subrayado del enlace */
+    color: aliceblue;             /* asigno el color a las letras*/
+    text-transform: uppercase;      /* Transforma el texto a mayúsculas */
+    font-size: 20px;
+}
+
+.barra_navegacion a {
+    display: block;
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.barra_navegacion a:hover {
+    background: #3f3f3f;   
+}
+
+/* clase titulo para las categorias*/
+.title {
+    padding-top: 100px;
+    font-size: 60px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+/*formato para los parrafos */
+p {
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #fff;
+    padding: 0 100px;
+}
+
+/* organizar diferentes secciones de contenido en el sitio web */
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*SECCION DE SERVICIO */
+
+/*si lo quito hace que se desarme el orden de la caja */
+.box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /*los elementos flexibles se envolverán en líneas adicionales para evitar que se desborden del contenedor flex*/
+    text-align: center;
+}
+
+/*son las cajas transparentes que encapsulan impresoras software etc*/
+.box-container .box {
+    height: 11rem; /*1 rem es igual al tamaño de la fuente del elemento raíz*/
+    width: 17rem; /*root em*/
+    text-align: center; 
+    border-radius: 1rem; /*Si no estableces un tamaño de fuente específico en el elemento raíz, el tamaño de fuente predeterminado del navegador se considera 16 píxeles*/
+    box-shadow: 0 0.3rem 5rem rgba(0, 0, 0, 0.5);
+    margin: 2rem;
+}
+
+/*le da el borde de color morado a los iconos de font-awesome*/
+.box-container .box i {
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    background: #1f53c5;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+/*color a las letras */
+.box-container .box h3 { 
+    font-size: 20px;
+    color: #fff;
+}
+
+/*MANTIENE TODO EN ORDEN GRACIAS AL PADDING*/
+.box-container .box p {
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+/* Sección de contacto */
+.contact {
+    padding-top: 20px;
+}
+
+/* Estilos responsivos */
+/* Cuando la pantalla es igual o menor a 700px de ancho */
+@media (max-width: 700px) {
+    .head {
+        flex-direction: column; /* Cambia la dirección de flexión del contenedor .head a columna */
+    }
+
+    .barra_navegacion {
+        padding: 10px 0px; /* Reduce el relleno superior e inferior de la barra de navegación */
+    }
+
+    .title {
+        margin-bottom: 0;
+        font-size: 40px;/* Elimina el margen inferior del título y aumenta su tamaño de fuente */
+    }
+
+    .barra_navegacion {
+        display: none; /* Oculta la barra de navegación en pantallas pequeñas */
+    }
+}
+
+/*-------------------------------------------------------------------- REUTILIZADO DEL TRABAJO ANTERIOR --------------------------------------------------------------------*/
+
+/* Estilo para el formulario de registro */
+.formulario-registro {
+    margin-top: 10px; /* Genera un espacio superior de 50px */
+    width: 80%; /* Ancho del 80% de la ventana del navegador */
+    max-width: 400px; /* Ancho máximo de 400px para mantener la legibilidad */
+    background: #24303c;
+    padding: 20px; /* Relleno interior */
+    margin: 1% auto; /* Margen superior e inferior del 25% y centrado horizontalmente */
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white; /* Color del texto */
+    box-shadow: 7px 13px 37px #000;
+}
+
+/* Estilo para los controles del formulario */
+.controls {
+    width: 100%; /* Ancho */
+    background: #24303c; /* Color de fondo */
+    padding: 10px; /* Relleno interior */
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+}
+
+/* Estilo para los botones del formulario */
+.formulario-registro .boton {
+    top: 50%;
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+/*este es para agregarle un espacio al final*/
+.last-btn{
+    margin-bottom: 90px;
+}
+
+/*-------------------------------------------------------------------- Columnas y tablas de la pestaña emergente --------------------------------------------------------------------*/
+
+/* Estilo para la lista de sugerencias */
+.lista_sugerencias {
+    background-color: #24303c; /* Color de fondo */
+    border: 2px solid #1f53c5; /* Borde */
+    padding: 20px; /* Espaciado interno */
+    color: white; /* Color de texto */
+    box-shadow: 7px 13px 37px #000; /* Agrega una sombra para que se vea estético */
+}
+
+/* Estilo para las celdas de la tabla */
+.table td, .table th {
+    background-color: #24303c !important; /* Color de fondo Y otorga prioridad con el !important  */
+    border: 2px solid #1f53c5 !important; /* Borde */
+    color: white !important; /* Color del texto */
+    text-align: center; /* Alineación de texto */
+}
+
+/*----------------------------------------------------------------------- Estilo para el CRUD -----------------------------------------------------------------------*/
+
+.contenedor .div-listado {
+    width: 100%; /* Ancho 100% */
+    height: calc(100% - 50px); /* Altura calculada */
+    margin: 15px 15px; /* Márgenes */
+    background: #24303c; /* Fondo gris oscuro */
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Dirección columna */
+    align-items: center; /* Alinear al centro */
+    border: 1px solid #1f53c5; /* Borde azul */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.3); /* Sombra */
+    font-family: sans-serif; /* Fuente sans-serif */
+}
+
+.contenedor .div-listado h2 {
+    margin-top: 10px; /* Margen superior */
+    font-weight: 300; /* Peso de fuente ligero */
+    font-size: 2em; /* Tamaño de fuente */
+    color: whitesmoke; /* Color de texto */
+}
+
+.contenedor .div-listado .div-empleados {
+    width: 100%; /* Ancho 100% */
+    height: 100%; /* Altura 100% */
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Dirección columna */
+    align-items: center; /* Alinear al centro */
+    margin: 15px; /* Márgenes */
+    padding: 0 30px; /* Relleno horizontal */
+}
+
+.contenedor .div-listado .div-empleados p {
+    margin: 10px 0; /* Márgenes verticales */
+    font-size: 1em; /* Tamaño de fuente */
+    color: #ddd; /* Color de texto */
+}
+
+hr {
+    width: 100%; /* Ancho 100% */
+    height: 1px; /* Altura 1px */
+}
+
+.boton {
+    padding: 5px 10px; /* Relleno */
+    border: none; /* Sin borde */
+    margin: 0 5px; /* Márgenes horizontales */
+    color: white; /* Color de texto */
+    border-radius: 50px; /* Bordes redondeados */
+}
+
+.boton-editar {
+    background-color: green; /* Fondo verde */
+}
+
+.boton-eliminar {
+    background-color: red; /* Fondo rojo */
+}
+
+/*----------------------------------------------------------------------- Estilo para la ventana emergente -----------------------------------------------------------------------*/
+.ventana-emergente {
+    position: fixed;
+    top: 50%; /* 50% desde arriba */
+    left: 50%; /* 50% desde la izquierda */
+    transform: translate(-50%, -50%);/* Centrar en el medio */
+    background-color: #24303c;
+    padding: 5px;
+    border: 1px #1f53c5;
+    z-index: 9999;/* Nivel de apilamiento alto */
+    display: none; /* Oculta la ventana emergente por defecto */
+    max-width: 90%; /* Tamaño máximo */
+    max-height: 90%; /* Altura máxima */
+    overflow: auto; /* Permite hacer scroll si el contenido excede las dimensiones */ 
+}
+
+.cerrar-ventana {
+    position: absolute; /* La posición del elemento es absoluta*/
+    top: 5px; /* 5px desde arriba */
+    right: 5px; /* 5px desde la derecha */
+    cursor: pointer;/* cambia a una mano cuando lo pase por encima */
+    color: red; 
+    background-color: #1f53c5; /* color del fondo*/
+}
+
+.barra-separadora {
+    height: 100px; /* Altura de la barra */
+    background-color: #00226a; /* Color del fondo */
+    margin-top: 20px; /* Espacio superior para separar visualmente */
+    text-align: center; /* Centra el botón */
+    display: flex; /* Utiliza flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+.terminos {
+    color: #ddd;
+}
